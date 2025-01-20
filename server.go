@@ -180,5 +180,5 @@ func main() {
 	server := NewServer(fetcher, repository)
 
 	http.HandleFunc("/cotacao", server.cotacaoHandler)
-	log.Fatal(http.ListenAndServe(":8081", nil))
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
